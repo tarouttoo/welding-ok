@@ -1,0 +1,47 @@
+{
+  "product": {
+    "name": "Кронштейн навесной",
+    "material": "ст3",
+    "process": "РД"
+  },
+  "documents": [
+    {
+      "assumptions": [
+        "Толщина деталей 4 мм принята по типовому узлу; уточнить у инженера при приёмке."
+      ],
+      "operations": [
+        {
+          "number": 1,
+          "position": "нижнее",
+          "equipment": {
+            "electrode_type": "УОНИ-13/55"
+          },
+          "params": {
+            "current_type": "постоянный",
+            "current_a": 130,
+            "polarity": "обратная",
+            "electrode_diameter_mm": 4,
+            "pass_count": 2
+          },
+          "welds": [
+            "Ш1",
+            "Ш2"
+          ],
+          "sketch_refs": [
+            "КЭ1"
+          ],
+          "transitions": [
+            {
+              "number": 1,
+              "description": "Установить и закрепить детали в приспособлении. Прихватить швы Ш1, Ш2 в двух местах."
+            },
+            {
+              "number": 2,
+              "description": "Заварить швы Ш1, Ш2 в нижнем положении. Шлак и брызги удалить."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
