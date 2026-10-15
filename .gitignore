@@ -1,0 +1,8 @@
+node_modules/
+.sandcastle/.env
+.sandcastle/logs/
+.sandcastle/worktrees/
+__pycache__/
+*.pyc
+# Real plant briefs: never committed (ADR 0002)
+briefs/
