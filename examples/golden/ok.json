@@ -1,0 +1,43 @@
+{
+  "product": {
+    "name": "Направляющая",
+    "material": "09Г2С",
+    "process": "РД"
+  },
+  "documents": [
+    {
+      "assumptions": [],
+      "operations": [
+        {
+          "number": 1,
+          "position": "вертикальное",
+          "equipment": {
+            "electrode_type": "УОНИ-13/55"
+          },
+          "params": {
+            "current_type": "постоянный",
+            "current_a": 95,
+            "polarity": "обратная",
+            "electrode_diameter_mm": 5,
+            "pass_count": 1
+          },
+          "welds": [
+            "Ш1",
+            "Ш2",
+            "Ш3",
+            "Ш4"
+          ],
+          "sketch_refs": [
+            "КЭ1"
+          ],
+          "transitions": [
+            {
+              "number": 1,
+              "description": "Сварить швы Ш1, Ш2, Ш3, Ш4 в вертикальном положении. Шлак и брызги удалить."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
