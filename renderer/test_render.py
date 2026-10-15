@@ -55,7 +55,6 @@ def test_every_contract_field_lands_in_a_defined_grapha() -> None:
         "operations[0].position",
         "operations[0].transitions",
         "operations[0].transitions[0]",
-        "operations[0].transitions[1]",
         "operations[0].welds",
         "operations[0].sketch_refs",
         "operations[0].equipment",
@@ -92,8 +91,7 @@ def test_record_lines_for_minimal_example() -> None:
     assert by_tag["operations[0].number"] == "Операция 1"
     assert by_tag["operations[0].position"] == "Положение сварки: нижнее."
     assert by_tag["operations[0].transitions"] == "Переходы:"
-    assert by_tag["operations[0].transitions[0]"].startswith("1. ")
-    assert by_tag["operations[0].transitions[1]"].startswith("2. ")
+    assert by_tag["operations[0].transitions[0]"] == "1. Сварить швы Ш1, Ш2 в нижнем положении. Шлак и брызги удалить."
     assert by_tag["operations[0].welds"] == "Швы: Ш1, Ш2."
     assert by_tag["operations[0].sketch_refs"] == "Ссылки на эскизы: КЭ1."
     assert by_tag["operations[0].equipment"] == "Электроды: УОНИ-13/55."
