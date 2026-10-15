@@ -21,6 +21,7 @@ Infrastructure (this file, skills, issues, commits) is English. Domain content
 - `briefs/` — real plant briefs. **Gitignored. Never commit.** (ADR 0002)
 - `examples/` — synthetic briefs and golden examples (committed).
 - `knowledge/` — curated Russian knowledge files for the agent.
+- `contract/` — the `ok.json` contract: normative spec (`contract/README.md`), structural validator and validation CLI (ADR 0001).
 - `renderer/`, `linter/` — deterministic Python code.
 
 ## Agent skills
